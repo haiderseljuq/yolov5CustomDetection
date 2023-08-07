@@ -1,0 +1,74 @@
+/* styles.css */
+
+@font-face {
+  font-family: 'Gotham'; /* Font family name for the font */
+  src: url('/static/assets/GothamSSm-Book_Web.woff2') format('woff2'); /* Relative path to the WOFF2 font file */
+}
+
+body {
+  font-family: 'Gotham', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to bottom, #cc2b5e, #753a88) fixed no-repeat;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+#video-stream {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+h1 {
+  text-align: center;
+  color: white;
+}
+
+h4 {
+  color: white;
+  text-align: center;
+}
+
+hr {
+  height: 2px;
+  border: 0px;
+  margin: 20px 0;
+  background: white;
+}
+
+form {
+  text-align: center;
+  margin-top: 40px;
+}
+
+input[type="file"] {
+  margin-right: 10px; /* Add space on the right */
+}
+
+input[type="file"],
+input[type="submit"] {
+  border-radius: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+  background-image: linear-gradient(to right, #cc2b5e, #753a88);
+  border: 2px solid white;
+  color: white;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+/* Hover effect for the upload button */
+input[type="file"]:hover,
+input[type="submit"]:hover {
+  background-image: linear-gradient(to right, #753a88, #cc2b5e);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  transform: scale(1.05);
+}

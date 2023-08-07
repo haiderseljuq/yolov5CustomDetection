@@ -1,0 +1,19 @@
+<!doctype html>
+<html>
+  <head>
+    <title>YOLOv5 Object Detection</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styles.css') }}">
+  </head>
+  <body>
+    <div class="container">
+      <h1>YOLOv5 Custom Object Detection</h1>
+      <hr/>
+        <img id="video-stream" src="{{ url_for('video_feed') }}">
+        <h4>Basketball, Person, Net</h4>
+      <form method="POST" enctype="multipart/form-data">
+        <input type="file" name="video_file" accept="video/*">
+        <input type="submit" value="Upload">
+      </form>
+    </div>
+  </body>
+</html>
